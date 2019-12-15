@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roomator </title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="main">
+
+      <div class="container">
+
+    <div class="app">
+
+      <button onclick="getLocation()">Your Location!</button>
+      <div id="pos"> your country here </div>
+      <div id="pos1"> your city is </div>
+      <div id="pos2"> your road is</div>
+
+      <div id="map"></div>
+
+    </div>
+
+    <!-- JS -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <script type="text/javascript">
+    app.initialize();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApFPNQ2WxbEueUXMJBPHjLenlPnFo68ls&callback=initMap">  </script>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/nouislider/nouislider.min.js"></script>
+<script src="vendor/wnumb/wNumb.js"></script>
+<script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
